@@ -1,34 +1,22 @@
-Read Only by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Personal Portfolio
 
+Welcome to my personal portfolio website!  
+This is a clean, minimal, and pastel-themed site I built using **HTML + CSS**, fully responsive and hosted via **GitHub Pages**.
 
-Just a super simple single-page responsive template built for personal sites and portfolios
-(although it'd definitely work for other stuff too). Includes a contact form, pre-styled
-elements, and Sass sources.
+## 🌟 What's Inside?
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+- 💁‍♀️ About Me — A brief intro about my background and goals
+- 🛠️ Skills — Tools and technologies I’m comfortable with
+- 📁 Projects — Projects I have worked on.
+- 🎓 Certifications — Industry simulations and credentials I’ve completed
+- 📬 Contact — Connect via email or LinkedIn
 
-(* = Not included)
+## Tech Stack
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+- HTML5
+- Custom CSS (pastel and dark-ready)
+- [GitHub Pages](https://pages.github.com/)
 
-AJ
-aj@lkn.io | @ajlkn
+## Live Preview
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+👉 Check it out here: [rituranigithub.github.io](https://rituranigithub.github.io)
