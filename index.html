@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ritu Rani | Data Enthusiast</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <style>
       body {
         margin: 0;
-        font-family: 'Quicksand', sans-serif;
-        background-color: #fff7fb;
-        color: #333;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+        color: #222;
       }
 
       header {
         text-align: center;
         padding: 2rem 1rem;
-        background-color: #fce8f0;
-        border-bottom: 2px solid #f8c3da;
+        background-color: #ffffff;
+        border-bottom: 2px solid #ffd6e8;
       }
 
       header img {
@@ -33,7 +33,7 @@
 
       p.subtitle {
         font-size: 1.1rem;
-        color: #555;
+        color: #666;
       }
 
       section {
@@ -43,7 +43,7 @@
       }
 
       h2 {
-        color: #d354a3;
+        color: #d46fa0;
         border-bottom: 2px solid #ffd6e8;
         padding-bottom: 0.3rem;
       }
@@ -60,32 +60,48 @@
         background-color: #ffe3f0;
         padding: 0.5rem 1rem;
         border-radius: 1rem;
+        color: #222;
       }
 
-      .project {
-        background: #fff0f5;
-        padding: 1rem;
-        margin-bottom: 1rem;
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .project-card {
+        background: #fef6fb;
+        border: 1px solid #fbd8e8;
         border-radius: 1rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        padding: 1rem;
+        transition: transform 0.2s ease;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.05);
       }
 
-      .project h3 {
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-card h3 {
         margin-top: 0;
-        color: #c94c99;
+        color: #ca5a93;
       }
 
-      .project a {
-        color: #b63684;
+      .project-card p {
+        margin-bottom: 0.5rem;
+      }
+
+      .project-card a {
         text-decoration: none;
         font-weight: bold;
+        color: #9e3b7c;
       }
 
       footer {
         text-align: center;
         margin: 2rem 0;
         font-size: 0.9rem;
-        color: #888;
+        color: #aaa;
       }
     </style>
   </head>
@@ -119,17 +135,26 @@
 
     <section>
       <h2>Projects</h2>
-      <div class="project">
-        <h3>🛍️ AI Tool Recommender</h3>
-        <p>Built an NLP-based AI tool recommender using cosine similarity and Streamlit. <a href="https://github.com/RituRaniGithub/AIToolRecommender">View on GitHub</a></p>
-      </div>
-      <div class="project">
-        <h3>📊 Bank Churn Prediction</h3>
-        <p>Created a decision tree classifier and achieved 85% accuracy. <a href="https://github.com/RituRaniGithub/BankChurnPrediction">View on GitHub</a></p>
-      </div>
-      <div class="project">
-        <h3>🎨 Art Web Scraper</h3>
-        <p>Scraped and organized artwork data using BeautifulSoup and Pandas. <a href="https://github.com/RituRaniGithub/ArtScraper">View on GitHub</a></p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>🛍️ AI Tool Recommender</h3>
+          <p>NLP-based recommender using cosine similarity + deployed on Streamlit.</p>
+          <a href="https://github.com/RituRaniGithub/AIToolRecommender">GitHub</a> | 
+          <a href="https://aitoolrecommender.streamlit.app/">Live Demo</a> | 
+          <a href="https://medium.com/@YourMediumLink/ai-tool-recommender-case-study">Blog</a>
+        </div>
+
+        <div class="project-card">
+          <h3>📊 Bank Churn Prediction</h3>
+          <p>Decision tree classifier with 85% accuracy & interpretability focus.</p>
+          <a href="https://github.com/RituRaniGithub/BankChurnPrediction">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>🎨 Art Web Scraper</h3>
+          <p>Web scraping project using BeautifulSoup to extract art metadata.</p>
+          <a href="https://github.com/RituRaniGithub/ArtScraper">GitHub</a>
+        </div>
       </div>
     </section>
 
