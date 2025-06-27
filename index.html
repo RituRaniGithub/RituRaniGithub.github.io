@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritu Rani | Data Enthusiast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #222;
+        --accent-color: #5c6ac4;
+        --card-bg: #f2f4ff;
+        --border-color: #d3d8ff;
+      }
+
+      [data-theme="dark"] {
+        --bg-color: #1f1f1f;
+        --text-color: #eaeaea;
+        --accent-color: #7f90ff;
+        --card-bg: #2c2c2c;
+        --border-color: #3a3a3a;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      header {
+        text-align: center;
+        padding: 2rem 1rem;
+        border-bottom: 2px solid var(--border-color);
+      }
+
+      header img {
+        width: 120px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      p.subtitle {
+        font-size: 1.1rem;
+        color: var(--text-color);
+      }
+
+      section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h2 {
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 0.3rem;
+      }
+
+      ul.skills, .cert-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      ul.skills li {
+        background-color: var(--card-bg);
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        color: var(--text-color);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .project-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: transform 0.2s ease;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-card h3 {
+        margin-top: 0;
+        color: var(--accent-color);
+      }
+
+      .project-card a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--accent-color);
+      }
+
+      footer {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+
+      .theme-toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0.5rem 1rem;
+        background-color: var(--accent-color);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+    <header>
+      <img src="https://i.imgur.com/JgXxXkL.png" alt="Ritu's avatar" />
+      <h1>Hi, I'm Ritu Rani! 👋</h1>
+      <p class="subtitle">📊 MSc Statistics | 🎯 Data Enthusiast | 💻 Python Explorer</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm currently pursuing my MSc in Statistics from LSR, Delhi University. I love exploring data, working on real-world projects, and transforming numbers into meaningful visuals. While I’m still learning tools like machine learning, I enjoy using Python and SQL to bring data stories to life.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>Seaborn</li>
+        <li>Matplotlib</li>
+        <li>SQL</li>
+        <li>Power BI</li>
+        <li>Excel</li>
+        <li>BeautifulSoup</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>🛍️ AI Tool Recommender</h3>
+          <p>NLP-based recommender using cosine similarity + deployed on Streamlit.</p>
+          <a href="https://github.com/RituRaniGithub/AIToolRecommender">GitHub</a> | 
+          <a href="https://aitoolrecommender.streamlit.app/">Live Demo</a>
+        </div>
+
+        <div class="project-card">
+          <h3>📊 Bank Churn Prediction</h3>
+          <p>Used Balanced Random Forest & Optuna to predict customer churn with 60% F1 Score and 86% ROC-AUC.</p>
+          <a href="https://github.com/RituRaniGithub/BankChurnPrediction">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>🎨 Art Web Scraper</h3>
+          <p>Web scraping project using BeautifulSoup to extract art metadata.</p>
+          <a href="https://github.com/RituRaniGithub/ArtScraper">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Accenture Data Analytics Job Simulation <a href="https://rb.gy/zaekts">(View)</a></li>
+        <li>PWC Power BI Job Simulation <a href="https://rb.gy/x6sdj8">(View)</a></li>
+        <li>KPMG AU Data Analytics Job Simulation <a href="https://rb.gy/55tid0">(View)</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:2710riturani@gmail.com">2710riturani@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/ritu-rani-01620522a/">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+      <p>Let’s turn messy data into meaningful stories. One project at a time. 💫</p>
+    </footer>
+
+    <script>
+      function toggleTheme() {
+        const currentTheme = document.body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.body.setAttribute('data-theme', newTheme);
+
+        const btn = document.querySelector('.theme-toggle');
+        btn.textContent = newTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+      }
+    </script>
+  </body>
+</html>
