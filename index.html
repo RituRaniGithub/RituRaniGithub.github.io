@@ -6,18 +6,34 @@
     <title>Ritu Rani | Data Enthusiast</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <style>
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #222;
+        --accent-color: #5c6ac4;
+        --card-bg: #f2f4ff;
+        --border-color: #d3d8ff;
+      }
+
+      [data-theme="dark"] {
+        --bg-color: #1f1f1f;
+        --text-color: #eaeaea;
+        --accent-color: #7f90ff;
+        --card-bg: #2c2c2c;
+        --border-color: #3a3a3a;
+      }
+
       body {
         margin: 0;
         font-family: 'Poppins', sans-serif;
-        background-color: #ffffff;
-        color: #222;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
       }
 
       header {
         text-align: center;
         padding: 2rem 1rem;
-        background-color: #ffffff;
-        border-bottom: 2px solid #ffd6e8;
+        border-bottom: 2px solid var(--border-color);
       }
 
       header img {
@@ -33,7 +49,7 @@
 
       p.subtitle {
         font-size: 1.1rem;
-        color: #666;
+        color: var(--text-color);
       }
 
       section {
@@ -43,8 +59,8 @@
       }
 
       h2 {
-        color: #d46fa0;
-        border-bottom: 2px solid #ffd6e8;
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--border-color);
         padding-bottom: 0.3rem;
       }
 
@@ -57,10 +73,10 @@
       }
 
       ul.skills li {
-        background-color: #ffe3f0;
+        background-color: var(--card-bg);
         padding: 0.5rem 1rem;
         border-radius: 1rem;
-        color: #222;
+        color: var(--text-color);
       }
 
       .projects-grid {
@@ -70,8 +86,8 @@
       }
 
       .project-card {
-        background: #fef6fb;
-        border: 1px solid #fbd8e8;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
         border-radius: 1rem;
         padding: 1rem;
         transition: transform 0.2s ease;
@@ -84,17 +100,13 @@
 
       .project-card h3 {
         margin-top: 0;
-        color: #ca5a93;
-      }
-
-      .project-card p {
-        margin-bottom: 0.5rem;
+        color: var(--accent-color);
       }
 
       .project-card a {
         text-decoration: none;
         font-weight: bold;
-        color: #9e3b7c;
+        color: var(--accent-color);
       }
 
       footer {
@@ -103,11 +115,25 @@
         font-size: 0.9rem;
         color: #aaa;
       }
+
+      .theme-toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0.5rem 1rem;
+        background-color: var(--accent-color);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+      }
     </style>
   </head>
   <body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
     <header>
-      <img src="images/pastelcodegirl.jpg" alt="Ritu's avatar" />
+      <img src="avatar.png" alt="Ritu's avatar" />
       <h1>Hi, I'm Ritu Rani! 👋</h1>
       <p class="subtitle">📊 MSc Statistics | 🎯 Data Enthusiast | 💻 Python Explorer</p>
     </header>
@@ -140,13 +166,12 @@
           <h3>🛍️ AI Tool Recommender</h3>
           <p>NLP-based recommender using cosine similarity + deployed on Streamlit.</p>
           <a href="https://github.com/RituRaniGithub/AIToolRecommender">GitHub</a> | 
-          <a href="https://aitoolrecommender.streamlit.app/">Live Demo</a> | 
-          <a href="https://medium.com/@YourMediumLink/ai-tool-recommender-case-study">Blog</a>
+          <a href="https://aitoolrecommender.streamlit.app/">Live Demo</a>
         </div>
 
         <div class="project-card">
           <h3>📊 Bank Churn Prediction</h3>
-          <p>Decision tree classifier with 85% accuracy & interpretability focus.</p>
+          <p>Used Balanced Random Forest & Optuna to predict customer churn with 60% F1 Score and 86% ROC-AUC.</p>
           <a href="https://github.com/RituRaniGithub/BankChurnPrediction">GitHub</a>
         </div>
 
@@ -175,5 +200,16 @@
     <footer>
       <p>Let’s turn messy data into meaningful stories. One project at a time. 💫</p>
     </footer>
+
+    <script>
+      function toggleTheme() {
+        const currentTheme = document.body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.body.setAttribute('data-theme', newTheme);
+
+        const btn = document.querySelector('.theme-toggle');
+        btn.textContent = newTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+      }
+    </script>
   </body>
 </html>
