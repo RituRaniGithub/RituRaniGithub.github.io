@@ -1,22 +1,14 @@
-# Personal Portfolio
+# Portfolio
 
-Welcome to my personal portfolio website!  
-This is a clean, minimal, and pastel-themed site I built using **HTML + CSS**, fully responsive and hosted via **GitHub Pages**.
+This repository hosts my personal portfolio website, where I showcase my projects and learning.
 
-## What's Inside?
+### 📍 [Explore the Live Portfolio](https://rituranigithub.github.io/)
 
-- 💁‍♀️ About Me — A brief intro about my background and goals
-- 🛠️ Skills — Tools and technologies I’m comfortable with
-- 📁 Projects — Projects I have worked on.
-- 🎓 Certifications — Industry simulations and credentials I’ve completed
-- 📬 Contact — Connect via email or LinkedIn
+### Stack
+* **Analysis:** Python, R, SQL, SPSS, MySQL
+* **Viz:** Power BI, Streamlit
+* **Writing:** [The Data Learner on Medium](https://medium.com/@TheDataLearner)
 
-## Tech Stack
-
-- HTML5
-- Custom CSS (pastel and dark-ready)
-- [GitHub Pages](https://pages.github.com/)
-
-## Live Preview
-
-👉 Check it out here: [rituranigithub.github.io](https://rituranigithub.github.io)
+### Connect
+* **Email:** ritu.rani.stats@gmail.com
+* **GitHub:** [@RituRaniGithub](https://github.com/RituRaniGithub)
