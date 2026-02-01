@@ -2,7 +2,7 @@
 
 This repository hosts my personal portfolio website, where I showcase my projects and learning.
 
-### 📍 [Explore the Live Portfolio](https://rituranigithub.github.io/)
+### [Explore the Live Portfolio](https://rituranigithub.github.io/)
 
 ### Stack
 * **Analysis:** Python, R, SQL, SPSS, MySQL
@@ -12,3 +12,4 @@ This repository hosts my personal portfolio website, where I showcase my project
 ### Connect
 * **Email:** ritu.rani.stats@gmail.com
 * **GitHub:** [@RituRaniGithub](https://github.com/RituRaniGithub)
+
